@@ -1,0 +1,43 @@
+
+ 
+ <!--<div class="container" style="margin:10px;">
+  
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#table">Text</button>
+  <div id="table" class="collapse show">
+    <div class="col-md-12" >
+   
+    <div class="table-responsive">          
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Category Name</th>
+          <th>Subcategory Name</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cat of products">
+          <td>{{cat.id}}</td>
+          <td><a  href="category/{{cat.id}}">{{cat.categoryName}}</a></td>
+          <td>{{cat.subcategoryName}}</td>
+         
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  </div>
+ </div>-->
+  <div class="container" style="margin:10px;">
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#json">Json</button>
+  <div id="json" class="collapse">
+  <div class="col-md-12" >{{products | json}}</div>
+  </div>
+  </div>
+    
+          
+           
+           
+    
+ 

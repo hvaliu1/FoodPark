@@ -1,0 +1,59 @@
+
+      <div class="container">         
+             
+             
+              <div class="table-responsive " >          
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Product</th>
+                    <th>Cooking Method</th>
+                    <th>Measure From</th>
+                    <th>Measure To</th>
+                    <th>Size Metric</th>
+                    <th>Cooking Temperature</th>
+                    <th>Timing From</th>
+                    <th>Timing To</th>
+                    <th>Timing Metric</th>
+                    <th>Timing Per</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let cat of cookingMethods">
+                    <td>{{cat.id}}</td>
+                    <td>{{cat.product}}</td>
+                    <td>{{cat.cookingMethod}}</td>
+                    <td>{{cat.measureFrom}}</td>
+                    <td>{{cat.measureTo}}</td>
+                    <td>{{cat.sizeMetric}}</td>
+                    <td>{{cat.cookingTemperature}}</td>
+                    <td>{{cat.timingFrom}}</td>
+                    <td>{{cat.timingTo}}</td>
+                    <td>{{cat.timingMetric}}</td>
+                    <td>{{cat.timingPer}}</td>
+                    <!-- <td><a  href="category/{{cat.id}}">{{cat.categoryName}}</a></td>
+                    <td>{{cat.subcategoryName}}</td> -->
+                   
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+           
+            
+            
+     
+    </div>
+    
+<div class="container">
+    
+   
+    
+    {{cookingMethods | json}}
+   
+ </div>
+
+
+
+
